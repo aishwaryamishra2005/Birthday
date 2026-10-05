@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy Birthday, Papa!</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Floating background decorations (filled by script.js) -->
+<div class="floaters" id="floaters" aria-hidden="true"></div>
+
+<!-- ============ PAGE 1 — GIFT ============ -->
+<section class="screen" id="gift">
+  <h1 class="big">Jai Shree Ram Pitaji 🙏</h1>
+  <p class="sub">Aapke liye kuch hai!...</p>
+
+  <button class="gift" id="giftBtn" aria-label="Open your surprise">
+    <span class="lid"></span>
+    <span class="box"></span>
+    <span class="ribbon-v"></span>
+  </button>
+
+  <p class="cta-label">🎁 Open Your Surprise</p>
+</section>
+
+<!-- ============ PAGE 2 — BIRTHDAY ============ -->
+<section class="screen locked" id="birthday">
+  <div class="balloon b1"></div><div class="balloon b2"></div><div class="balloon b3"></div>
+  <h2 class="big pop">🎉 HAPPY BIRTHDAY, PAPA! 🎉</h2>
+  <p class="sub pop">To the man who has always been there for us. ❤️</p>
+
+  <svg class="cake" viewBox="0 0 200 180" aria-label="Birthday cake">
+    <ellipse cx="100" cy="168" rx="80" ry="8" fill="#3D3540" opacity=".12"/>
+    <rect x="30" y="100" width="140" height="62" rx="14" fill="#F8BBD0"/>
+    <rect x="30" y="100" width="140" height="22" rx="11" fill="#fff"/>
+    <rect x="50" y="62" width="100" height="44" rx="12" fill="#CDB4DB"/>
+    <rect x="50" y="62" width="100" height="16" rx="8" fill="#fff"/>
+    <circle cx="70" cy="140" r="5" fill="#FFD166"/><circle cx="100" cy="146" r="5" fill="#A8DADC"/><circle cx="130" cy="140" r="5" fill="#B7E4C7"/>
+    <rect x="76" y="36" width="8" height="26" rx="3" fill="#A8DADC"/>
+    <rect x="116" y="36" width="8" height="26" rx="3" fill="#B7E4C7"/>
+    <ellipse class="flame" cx="80" cy="28" rx="5" ry="9" fill="#FFD166"/>
+    <ellipse class="flame" cx="120" cy="28" rx="5" ry="9" fill="#FFD166"/>
+  </svg>
+
+  <p class="sub pop"><strong>Today is about the enlightened underrated preacher!</strong></p>
+  <p class="small pop">Another year older... but definitely not wiser anymore!</p>
+  <button class="next" data-next="memories">Continue →</button>
+</section>
+
+<!-- ============ PAGE 3 — MEMORIES ============ -->
+<section class="screen locked" id="memories">
+  <h2 class="big">📸 A Few of Our Favourite Memories</h2>
+  <p class="sub">Some moments become memories that we keep forever.</p>
+
+  <!-- To change a photo: replace the file in assets/photos/ (same name), and edit the caption below. -->
+  <div class="scrap">
+    <figure class="polaroid" style="--r:-5deg;--w:260px"><span class="tape"></span>
+      <img src="assets/WhatsApp Image 2026-10-05 at 11.09.35 AM.jpeg" alt="Family photo 1"></figure>
+    <figure class="polaroid" style="--r:4deg;--w:210px;margin-top:40px"><span class="tape"></span>
+      <img src="assets/WhatsApp Image 2026-10-05 at 11.10.24 AM.jpeg" alt="Family photo 2"></figure>
+    <figure class="polaroid" style="--r:-2deg;--w:290px"><span class="tape"></span>
+      <img src="assets/WhatsApp Image 2026-10-05 at 11.11.16 AM.jpeg" alt="Family photo 3"></figure>
+    <figure class="polaroid" style="--r:6deg;--w:230px;margin-top:30px"><span class="tape"></span>
+      <img src="assets/WhatsApp Image 2026-10-05 at 11.12.01 AM.jpeg" alt="Family photo 4"></figure>
+    <figure class="polaroid" style="--r:-4deg;--w:250px"><span class="tape"></span>
+      <img src="assets/WhatsApp Image 2026-10-05 at 11.35.53 AM.jpeg" alt="Family photo 5"></figure>
+  </div>
+  <p class="small">Tap any photo to see it bigger.</p>
+  <button class="next" data-next="love">See Our Memories →</button>
+</section>
+
+<!-- ============ PAGE 4 — THINGS WE LOVE ============ -->
+<section class="screen locked" id="love">
+  <h2 class="big">❤️ A Few Things We Love About You</h2>
+  <!-- Edit the text inside each card freely. Add [MEMORY TEXT] or inside jokes here. -->
+  <div class="cards">
+    <article class="card c1"><span class="ico">🛡️</span><h3>Always There</h3><p>No matter what happens, you've always been someone we can count on.</p></article>
+    <article class="card c2"><span class="ico">😂</span><h3>The Dad Jokes</h3><p>Some are genuinely funny. Some are... questionable. But we wouldn't have it any other way.</p></article>
+    <article class="card c3"><span class="ico">💪</span><h3>Our Strength</h3><p>You've taught us to keep going even when things aren't easy.</p></article>
+    <article class="card c4"><span class="ico">🏠</span><h3>Home</h3><p>You have a way of making home feel like home.</p></article>
+    <article class="card c5"><span class="ico">❤️</span><h3>Family First</h3><p>You've always made sure that our family comes first.</p></article>
+    <article class="card c6"><span class="ico">😊</span><h3>Your Smile</h3><p>Because somehow, your smile can make an ordinary day better.</p></article>
+  </div>
+  <button class="next" data-next="letter">Read My Message →</button>
+</section>
+
+<!-- ============ PAGE 5 — LETTER ============ -->
+<section class="screen locked letter-screen" id="letter">
+  <h2 class="big">💌 A Little Message for Dad</h2>
+  <p class="sub">Open when you're ready...</p>
+  <div class="envelope" id="envelope"><span class="flap"></span></div>
+  <button class="next" id="openLetter">Open Letter ❤️</button>
+  <button class="next hidden" id="toFinal" data-next="final">Keep Going →</button>
+</section>
+
+<!-- Letter overlay. Edit the paragraphs below with your own words. -->
+<div class="overlay" id="overlay">
+  <div class="paper" id="paper">
+    <button class="close" id="closeLetter" aria-label="Close letter">✕</button>
+    <p class="line"><strong>Dear Papa,</strong></p>
+    <p class="line">Whatever we are today, we are because of you!</p>
+    <p class="line">On your birthday, I just want to wish you happiness, good health, peace and many more wonderful years surrounded by the people who love you.</p>
+    <p class="line"><strong>Happy Birthday. ❤️</strong></p>
+    <p class="line sign">— Aishwarya n Akshay</p>
+  </div>
+</div>
+
+<!-- Photo lightbox -->
+<div class="overlay" id="lightbox"><img id="lightImg" alt=""></div>
+
+<!-- ============ FINAL ============ -->
+<section class="screen locked" id="final">
+  <div id="finalIntro">
+    <h2 class="big">Wait, Dad... 👀</h2>
+    <p class="sub">There's one more thing.</p>
+    <button class="next" id="lastBtn">✨ One Last Surprise</button>
+  </div>
+  <div id="finalReveal" class="hidden">
+    <h2 class="big">🎊 HAPPY BIRTHDAY, DAD! 🎊</h2>
+    <figure class="polaroid final-photo" style="--r:-3deg;--w:320px"><span class="tape"></span>
+      <video src="assets/WhatsApp Video 2026-10-05 at 11.15.03 AM.mp4" poster="assets/photos/final.jpg" controls playsinline preload="metadata"></video></figure>
+    <p class="sub">Thank you for being our guide, our support, and one of the most important people in our lives. ❤️</p>
+    <p class="sub">Here's to many more birthdays, memories, laughs and family adventures together!</p>
+    <p class="big love-you">We Love you. ❤️</p>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
